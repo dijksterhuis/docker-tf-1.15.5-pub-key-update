@@ -1,8 +1,10 @@
 # Patched Tensorflow v1.15.5 Docker Image (Unsigned NVIDIA `compose/cuda` Public Key)
 
-The key for NVIDIA's cuda repository was changed recently and Tensorflow are no longer building/updating the 1.15.5 image (which I need for my PhD).
+The key for NVIDIA's cuda repository was changed recently and Tensorflow are no longer 
+building/updating the [1.15.5-gpu-py3](https://hub.docker.com/layers/tensorflow/tensorflow/tensorflow/1.15.5-gpu-py3/images/sha256-7ad742cbb2c77a40d0996ec08345dff54fe25f39428486e5f41c69db04b6d17b?context=explore) 
+image (which I need for my PhD).
 
-Repository simple adds the key, runs an `apt update` to verify it all works fine then pushes the image to dockerhub.
+Repository adds [the updated key](https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/), runs an `apt update` to verify it all works fine then pushes the image to [dockerhub](https://hub.docker.com/repository/docker/dijksterhuis/tensorflow-1.15.5-pub-key-update).
 
 GitHub Actions error logs in case someone else searches for the problem:
 ```
