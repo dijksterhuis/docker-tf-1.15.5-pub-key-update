@@ -1,4 +1,4 @@
-# Patched Tensorflow v1.15.5 Docker Image (Unsigned NVIDIA `compose/cuda` Public Key)
+# Patched Tensorflow v1.15.5 Docker Image -- Unsigned NVIDIA `compute/cuda` Public Key
 
 The key for NVIDIA's cuda repository was changed recently and Tensorflow are no longer 
 building/updating the [1.15.5-gpu-py3](https://hub.docker.com/layers/tensorflow/tensorflow/tensorflow/1.15.5-gpu-py3/images/sha256-7ad742cbb2c77a40d0996ec08345dff54fe25f39428486e5f41c69db04b6d17b?context=explore) 
